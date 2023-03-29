@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Связь</title>
+    <link rel="stylesheet" href="css/page4.css">
+</head>
+<body>
+<div class="big-container">
+<div class="container">
+    <form action="/check.php" method="post" enctype="multipart/form-data">
+    <h1 class="box__header"><p class="header">Свяжитесь с нами</p>
+        <div class="cont-desc">
+            <input type="text" class="desc1" name="desc1" id="desc1" placeholder="Опишите задачу...">
+            <input type="text" class="desc2" name="desc2" id="desc2">
+            <input type="text" class="desc3" name="desc3" id="desc3">
+            <input type="text" class="desc4" name="desc4" id="desc4">
+            <input type="text" class="desc5" name="desc5" id="desc5">
+            <input type="text" class="desc6" name="desc6" id="desc6">
+        </div>
+        <script>
+            desc1.addEventListener('keyup', joinValues, false);
+            desc2.addEventListener('keyup', joinValues, false);
+            desc3.addEventListener('keyup', joinValues, false);
+            desc4.addEventListener('keyup', joinValues, false);
+            desc5.addEventListener('keyup', joinValues, false);
+            function joinValues(){
+                desc6.value = desc1.value + ' ' + desc2.value+ ' ' + desc3.value+ ' ' + desc4.value+ ' ' + desc5.value;
+            }
+        </script>
+
+
+    <!--<div class="textarea"> <p class="input-placeholder"></p>
+        <textarea type="text" name="desc" id="desc" class="notes" placeholder="Опишите задачу..." rows="10"></textarea>
+    </div>-->
+
+
+        <div class="input__wrapper"><img class="image1" src="img/Vector.png" width="18" height="16">
+            <input type="file" class="btn-input-T3">
+    <input type="text" class="input_file" placeholder="Прикепите T3">
+        </div>
+        <div class="input__wrapper"><img class="image2" src="img/YY3eoVniu8E2bCYyJ1tjC9_rE6b_VbfRL0idrhiz3S6E4OEbKIsdUShgHEsGPJuV8wxQkiLT.jpg" width="18" height="16">
+            <input type="file" class="btn-input-foto">
+            <input type="text" class="input_file2" placeholder="Добавте фото товара">
+        </div>
+
+        <button type="submit" class="btn__submit">Отправить заявку</button>
+        <img src="img/Rectangle%2028.jpg" width="541" height="730" class="rectangle">
+    </h1></form>
+</div>
+
+    <div class="container2">
+        <h1 class="subtitle">Ваши данные</h1>
+        <h2 class="subtitle-min">Описание задач</h2>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Elit duis tristique sollicitudin nibh sit amet. Ultrices eros in cursus turpis massa tincidunt. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Pharetra convallis posuere morbi leo urna.
+            Eget sit amet tellus cras adipiscing. </p>
+        <h2 class="subtitle-mini">Техническое задание</h2>
+        <img class="task-img" src="img/Vector2.jpg">
+        <a class="task-href">T3_задачи.doc</a>
+        <h1 class="subtitle-product">Фотографи товара</h1>
+
+        <img class="product-img1" src="img/Rectangle 27.jpg">
+        <img class="product-img2" src="img/Rectangle 30.jpg">
+        <img class="product-img3" src="img/Rectangle 29.jpg">
+
+        <a class="img-name1">IMG12344.jpg</a>
+        <a class="img-name2">IMG00344.png</a>
+        <a class="img-name3">IMG00544.png</a>
+
+        <button class="confirm-information">Подтвердить информацию</button>
+
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
